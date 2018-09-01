@@ -1,31 +1,93 @@
 <html>
 
-<head>
-  <link rel="stylesheet" type="text/css" href="template.css">
-</head>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index_scaling.js"></script>
+    <link rel="stylesheet" href="constant.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="navbar.js"></script>
+  </head>
 
-<body>
-  <div id="banner">
-    <div id="bannerLeft">
-      <img src="placeholder.jpg"/>
+  <body onchange="changeBackdrop()">
+
+    <div id="sideNav" class="side-nav">
+      <img class="close-icon" src="images/close.png" onclick="closeNav()" />
+      <ul class="side-links">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="scotbowl.html">ScotBowl</a>
+          </li>
+          <li>
+            <a href="events.html">Events</a>
+          </li>
+          <li>
+            <a href="contactus.html">Contact Us</a>
+          </li>
+      </ul>
     </div>
-    <div id="bannerRight">
-      <a href=""> About </a>
-      <a href=""> Events </a>
-      <a href=""> Contact Us </a>
-    </div>
-  </div>
-  <div id="main">
-    <div id="content">
-      <div id="mainBox"> This is where the main link will go!
+
+    <div class="container">
+
+    <header class="topbar">
+
+      <img id="hamburger" class="hamburger" src="images/hamburger.png" onclick="openNav()" />
+      <img class="logo" src="images/logo.png"  />
+      <nav class="navbar">
+        <ul class="links">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="scotbowl.html">ScotBowl</a>
+          </li>
+          <li>
+            <a href="events.html">Events</a>
+          </li>
+          <li>
+            <a href="contactus.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="maincontent">
+      <img class="backdrop" id="backdrop"  />
+
+      <div>
+        <p class="title">Edinburgh University Quiz Society</p>
+        <p class="subtitle">
+          Quizzing since 1998 or whatever idk...We like to quiz
+          we quiz on TV, we quiz in pubs, w e quiz in appleton tower we quiz errywhere
+        </p>
       </div>
-      <div id="subBoxes">
-        <div id="smallBox">Sub Link 1</div>
-        <div id="smallBox"> Sub Link 2</div>
-        <div id="smallBox">Sub Link 3</div>
+    </div>
+    <div class="secondary-content">
+      <div class="box-wrapper">
+        <span class="box-title">
+          Scotbowl
+        </span>
+        <div class="description">
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam congue justo vitae quam consectetur, vel pharetra magna placerat. Proin dignissim in nunc eget facilisis. Phasellus consequat mi et enim elementum, a ornare nisi feugiat. Nam ante massa, vehicula vitae tempus a, tempor non mauris. Cras sed augue ac dolor gravida gravida at sit amet ligula. Duis at lacus eu lacus convallis posuere. Aenean vel lacinia ipsum. Sed id commodo enim. Aenean mollis, erat eget aliquet hendrerit, sapien mi vehicula nunc, eu porttitor dui ex vel enim. In porta orci erat, eget cursus orci porta in.
+        </div>
+        <div class="find-out-more button-temp">
+          Find out more
+        </div>
+      </div>
+      <div class="box-wrapper">
+        <span class="box-title">
+          Events
+        </span>
+        <span class="description">
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam congue justo vitae quam consectetur, vel pharetra magna placerat. Proin dignissim in nunc eget facilisis. Phasellus consequat mi et enim elementum, a ornare nisi feugiat. Nam ante massa, vehicula vitae tempus a, tempor non mauris. Cras sed augue ac dolor gravida gravida at sit amet ligula. Duis at lacus eu lacus convallis posuere. Aenean vel lacinia ipsum. Sed id commodo enim. Aenean mollis, erat eget aliquet hendrerit, sapien mi vehicula nunc, eu porttitor dui ex vel enim. In porta orci erat, eget cursus orci porta in.
+        </span>
+        <div class="find-out-more button-temp">
+          Find out more
+        </div>
+      </div>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 
 </html>
