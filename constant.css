@@ -24,6 +24,7 @@
   white-space: nowrap;
 }
 .links li a {
+  font-size: 20px;
   text-decoration: none;
   color: black;
 }
