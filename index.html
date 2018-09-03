@@ -1,12 +1,17 @@
 <html>
 
   <head>
+    <link rel="icon" href="">
+    <title>University Of Edinburgh Quiz Society</title>
+    <meta name="description" content="Offical website for the University Of Edinburgh Quiz Society.">
+    <meta name="keywords" content="quiz,edinburgh university,quiz society,pub quiz,eusa,buzzer quiz">
+    <meta name="author" content="Quiz Society Committee">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="index_scaling.js"></script>
-    <link rel="stylesheet" href="constant.css" />
-    <link rel="stylesheet" href="index.css" />
-    <script src="navbar.js"></script>
+    <script src="js/index_scaling.js"></script>
+    <link rel="stylesheet" href="css/constant.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/constant.js"></script>
   </head>
 
   <body onchange="changeBackdrop()">
@@ -29,66 +34,64 @@
       </ul>
     </div>
 
-    <div class="container">
+      <header class="topbar" id="topbar">
 
-    <header class="topbar">
+        <img id="hamburger" class="hamburger" src="images/hamburger.png" onclick="openNav()" />
+        <img class="logo" src="images/logo.png"  />
+        <nav class="navbar">
+          <ul class="links">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="scotbowl.html">ScotBowl</a>
+            </li>
+            <li>
+              <a href="events.html">Events</a>
+            </li>
+            <li>
+              <a href="contactus.html">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <img class="backdrop" id="backdrop"  />
+      <div class="maincontent" id="main">
 
-      <img id="hamburger" class="hamburger" src="images/hamburger.png" onclick="openNav()" />
-      <img class="logo" src="images/logo.png"  />
-      <nav class="navbar">
-        <ul class="links">
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="scotbowl.html">ScotBowl</a>
-          </li>
-          <li>
-            <a href="events.html">Events</a>
-          </li>
-          <li>
-            <a href="contactus.html">Contact Us</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <img class="backdrop" id="backdrop"  />
-    <div class="maincontent">
-      <div>
-        <p class="title">Edinburgh University Quiz Society</p>
-        <p class="subtitle">
-          Dedicated to organising, promoting and participating in quizzes for every skill level and form
-        </p>
-      </div>
-    </div>
-    <div class="secondary-content">
-      <div class="box-wrapper">
-        <span class="box-title">
-          Freshers Quiz
-        </span>
-        <div class="description">
-           We have loads of great events planned for this semester including our freshers quiz! This quiz is being hosted in Teviot Underground on the 19th of September. This is a greate chance to meet the society as well as get for a taste for what we do on a weekly basis.
-        </div>
-        <div class="find-out-more button-temp">
-          Find out more
+        <div>
+          <p class="title">Edinburgh University Quiz Society</p>
+          <p class="subtitle">
+            Dedicated to organising, promoting and participating in quizzes for every skill level and form
+          </p>
         </div>
       </div>
-      <!---
-      <div class="box-wrapper">
-        <span class="box-title">
-          Scotbowl 2019
-        </span>
-        <span class="description">
-          Stay tuned for more information on our annual quiz bowl!
-        </span>
-
-        <div class="find-out-more button-temp">
-          Find out more
+      <div class="secondary-content" id="secondary">
+        <div class="box-wrapper">
+          <span class="box-title">
+            Freshers Quiz
+          </span>
+          <div class="description">
+             We have loads of great events planned for this semester including our freshers quiz! This quiz is being hosted in Teviot Underground on the 19th of September. This is a greate chance to meet the society as well as get for a taste for what we do on a weekly basis.
+          </div>
+          <a href="freshersquiz.html">
+          <div class="find-out-more button-temp">
+            Find out more
+          </div>
+        </a>
         </div>
 
-      </div>
-    -->
-      </div>
+        <div class="box-wrapper">
+          <span class="box-title">
+            Scotbowl 2019
+          </span>
+          <span class="description">
+            Stay tuned for more information on our annual quiz bowl!
+          </span>
+
+          <div class="find-out-more button-temp" >
+            Find out more
+          </div>
+        </div>
     </div>
   </body>
 
