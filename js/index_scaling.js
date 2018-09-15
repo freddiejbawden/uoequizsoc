@@ -1,6 +1,4 @@
-$(document).ready(function() {
-  changeBackdrop();
-});
+
 
 function changeBackdrop() {
   if ($(window).width() < 840) {
