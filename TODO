@@ -1,15 +1,17 @@
 TODO:
 
-Change NavBar so changes alter all pages to make management easier.
+- Change NavBar so changes alter all pages to make management easier.
 
-Input meta data for all pages
+- Input meta data for all pages
 
-Make changing text easier for those with out git experience
+- Make changing text easier for those with out git experience
 
-Set up RSS Feed for events?
+- Set up RSS Feed for events?
 
-Fix the Resposive for Kindle Fire HDX (800 x 1280)
+- Fix the Resposive for Kindle Fire HDX (800 x 1280)
 
-Add YAML/JSON/other text thing so people can update
+- Add YAML/JSON/other text input so people can update
 
-Spell Check About page
+- Spell Check About page
+
+- Add link to Facebook
